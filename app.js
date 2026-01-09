@@ -25,7 +25,7 @@ async function exportMongoToExcel() {
     await client.connect();
     console.log("MongoDB connected");
 
-    const db = client.db("adeptforms");
+    const db = client.db("dbname");
     const collection = db.collection("user");
 
     // Filter query
